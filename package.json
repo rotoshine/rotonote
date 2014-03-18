@@ -6,7 +6,10 @@
   },
   "dependencies": {
     "express": "3.2.6",
-    "node_hash": "^0.2.0"
+    "node_hash": "^0.2.0",
+    "underscore": "^1.6.0",
+    "glob": "^3.2.9",
+    "mongoose": "^3.8.8"
   },
   "description": "angular.js + require.js + express + mongoose test sample.",
   "main": "app.js",
