@@ -1,0 +1,3 @@
+node_modules
+config/mongo.conf.json
+public/bower_components

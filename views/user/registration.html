@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="user">
+<head>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<title>login</title>
+</head>
+<body ng-controller="userController">
+<div class="container-fluid">
+	<form action="/user" method="post" ng-submit="addUser(user, $event)">
+		<input class="input-medium" type="text" required="required" placeholder="id" ng-model="user.id"/>
+		<input class="input-medium" type="text" required="required" placeholder="nickname" ng-model="user.nickname"/>
+		<input class="input-medium" type="password" required="required" placeholder="password" ng-model="user.password"/>
+		<button type="submit">가입</button>
+	</form>
+</div>
+<script type="text/javascript" src="/bower_components/requirejs/require.js" data-main="/js/require.config.js"></script>
+<script type="text/javascript">
+	require(["ng-modules/user"]);
+</script>
+</body>
+</html>

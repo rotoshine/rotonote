@@ -1,0 +1,20 @@
+{
+  "name": "rotonote",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "3.2.6",
+    "node_hash": "^0.2.0"
+  },
+  "description": "angular.js + require.js + express + mongoose test sample.",
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "http://githup.com/rotoshine/rotonote"
+  },
+  "author": "TaeHee Kim",
+  "license": "MIT"
+}
