@@ -12,7 +12,6 @@ define(["angular"], function(angular){
                 password : password
             }).
             success(function(result){
-                    alert("로그인");
                 // 쿼리스트링에서 returnUrl있으면 분리
                 var returnUrl;
                 var querystring;
@@ -29,14 +28,11 @@ define(["angular"], function(angular){
                     }
                 }
                 if(paramMap.hasOwnProperty("returnUrl")){
-                    alert("리턴유알엘")
                     location.href = paramMap.returnUrl;
                 }
                 else if(result.returnUrl){
-                    alert("2")
                     location.href = result.returnUrl
                 }else{
-                    alert(3);
                     location.href = "/";
                 }
             }).
